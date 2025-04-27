@@ -1,0 +1,39 @@
+
+header {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+  
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header nav a {
+  color: #e0e0e0;
+  margin-left: 1.5em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #bb86fc;
+}
+
+.active-link {
+  color: #bb86fc;
+  border-bottom: 2px solid #bb86fc;
+}
+
+main {
+max-width: 900px;
+margin: 2em auto;
+padding: 0 1em;
+}
+  

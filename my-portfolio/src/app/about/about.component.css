@@ -1,0 +1,21 @@
+.about-container {
+    margin-top: 2em;
+    background: #1e1e1e;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    line-height: 1.6em;
+    margin: 2em auto;             
+    max-width: 1200px;
+}
+
+.about-container h2 {
+color: #bb86fc;
+margin-top: 0;
+}
+
+.about-container strong {
+color: #ffffff;
+}
+  
