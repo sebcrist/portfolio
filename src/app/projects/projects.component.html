@@ -1,6 +1,6 @@
 <main>
     @for (project of projects; track project.title) {
-      <a [href]="project.link" target="_blank" class="project-link">
+      <a [routerLink]="project.route" class="project-link">
       <section class="project">
         <img [src]="project.image" alt="{{ project.title }}">
         <div class="project-info">

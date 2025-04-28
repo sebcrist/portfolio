@@ -2,10 +2,18 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { RobotsComponent } from './projects/robots/robots.component';
+import { EchecComponent } from './projects/echec/echec.component';
+import { GestionBOMComponent } from './projects/gestion-bom/gestion-bom.component';
+import { FantasyRPGComponent } from './projects/fantasy-rpg/fantasy-rpg.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'projects', component: ProjectsComponent},
+    { path: 'projects/robot', component: RobotsComponent},
+    { path: 'projects/echec', component: EchecComponent},
+    { path: 'projects/gestionBOM', component: GestionBOMComponent},
+    { path: 'projects/fantasyRPG', component: FantasyRPGComponent},
     { path: '**', redirectTo: '' },
 ];
