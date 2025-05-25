@@ -1,25 +1,37 @@
 <section class="project-detail-container">
-    <div class="github-link">
-        <a href="https://github.com/sebcrist/Systeme-Gestion-de-BOM" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i> Checkout the Code
-        </a>
-      </div>
+  <div class="github-link">
+    <a href='https://github.com/sebcrist/FantasyRPG' target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Checkout the Code
+    </a>
+  </div>
 
-<h2>Integrative Project 2 - Polytechnique Montréal (2025)</h2>
+  <h2>Integrative Project 2 - Polytechnique Montréal (2025)</h2>
 
-<p class="project-description">
-This project is a tactical RPG web platform developed using <strong>TypeScript</strong>, <strong>Angular</strong>, and <strong>NestJS</strong>, enabling players to engage in turn-based combat on customizable grid maps.
-The platform supports multiplayer sessions, includes an <strong>algorithm-driven virtual player system</strong>, features real-time chat, and game state management for an immersive gameplay experience.
-</p>
+  <p class="project-description">
+  This project is a tactical RPG web platform developed using <strong>TypeScript</strong>, <strong>Angular</strong>, and <strong>NestJS</strong>, enabling players to engage in turn-based combat on customizable grid maps.
+  The platform supports multiplayer sessions, includes an <strong>algorithm-driven virtual player system</strong>, features real-time chat, and game state management for an immersive gameplay experience.
+  </p>
 
-<div class="project-images">
-<img src="assets/combatRPG.png" alt="Gameplay Screenshot">
-<img src="assets/gameRPG.png" alt="Edition Screenshot">
-</div>
+  <div class="project-images">
+    <img src="assets/combatRPG.png" alt="Gameplay Screenshot">
+    <img src="assets/gameRPG.png" alt="Edition Screenshot">
+    <img src="assets/character.png" alt="BOM Management Desktop Screenshot">
+    <img src="assets/waitingRPG.png" alt="BOM Management Desktop Screenshot">
+    <img src="assets/movementRPG.png" alt="BOM Management Desktop Screenshot">
+    <img src="assets/listRPG.png" alt="BOM Management Desktop Screenshot">
+    <img src="assets/homeFantasyRPG.png" alt="BOM Management Desktop Screenshot">
+  </div>
 
-<div class="more-content-placeholder">
-    <p>More details coming soon...</p>
-</div>
+  <div class="more-content-placeholder">
+      <p>More details coming soon...</p>
+  </div>
 
-<button routerLink="/projects" class="back-button">← Back to Projects</button>
+  <button routerLink="/projects" class="back-button">← Back to Projects</button>
 </section>
+
+
+@if (lightboxImage) {
+  <div class="lightbox" (click)="closeLightbox()" [class.visible]="lightboxVisible">
+    <img [src]="lightboxImage" alt="Zoomed Image" (click)="$event.stopPropagation()">
+  </div>
+}

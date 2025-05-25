@@ -1,6 +1,6 @@
 <section class="project-detail-container">
     <div class="github-link">
-      <a [href]="projectLink" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/sebcrist/Systeme-Gestion-de-BOM" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-github"></i> Checkout the Code
       </a>
     </div>
@@ -14,6 +14,9 @@
   
     <div class="project-images">
       <img src="assets/mainDesktop.png" alt="BOM Management Desktop Screenshot">
+      <img src="assets/editMobile.jpg" alt="BOM Management Desktop Screenshot">
+      <img src="assets/qrCode.png" alt="BOM Management Desktop Screenshot">
+      <img src="assets/scanMobile.jpg" alt="BOM Management Desktop Screenshot">
     </div>
   
     <div class="more-content-placeholder">
@@ -23,3 +26,9 @@
     <button routerLink="/projects" class="back-button">← Back to Projects</button>
   </section>
   
+  
+@if (lightboxImage) {
+  <div class="lightbox" (click)="closeLightbox()" [class.visible]="lightboxVisible">
+    <img [src]="lightboxImage" alt="Zoomed Image" (click)="$event.stopPropagation()">
+  </div>
+}

@@ -60,7 +60,7 @@ color: #ffffff;
 display: flex;
 flex-wrap: wrap;
 gap: 1em;
-justify-content: center;
+justify-content: space-between;
 margin-bottom: 2em;
 }
 
@@ -101,3 +101,39 @@ margin: 0 auto;
 background-color: #9b6bff;
 transform: scale(1.05);
 }
+
+.lightbox {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: rgba(10, 10, 10, 0.9);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+opacity: 0;
+transition: opacity 0.3s ease;
+pointer-events: none;
+}
+
+.lightbox.visible {
+opacity: 1;
+pointer-events: auto;
+}
+
+.lightbox img {
+max-width: 90%;
+max-height: 90%;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+transition: transform 0.3s ease;
+animation: fadeInImg 0.3s ease;
+}
+
+@keyframes fadeInImg {
+from { opacity: 0; transform: scale(0.95); }
+to { opacity: 1; transform: scale(1); }
+}
+  

@@ -1,25 +1,39 @@
 <section class="project-detail-container">
-    <div class="github-link">
-      <a href="https://github.com/sebcrist/Jeu_Echecs_MVC" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i> Checkout the Code
-      </a>
-    </div>
-  
-    <h2>Chess Game - Polytechnique Montréal (2024)</h2>
-  
-    <p class="project-description">
-      Chess game developed in <strong>C++</strong> using the <strong>Qt framework</strong>, following the **MVC (Model-View-Controller)** design pattern.
-      This project was completed as part of the **INF1015** course and includes complete implementation of game logic, graphical interface, and player interaction.
-    </p>
-  
+  <div class="github-link">
+    <a href="https://github.com/sebcrist/Jeu_Echecs_MVC" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Checkout the Code
+    </a>
+  </div>
+
+  <h2>Chess Game - Polytechnique Montréal (2024)</h2>
+
+  <p class="project-description">
+    Chess game developed in <strong>C++</strong> using the <strong>Qt framework</strong>, following the <strong>MVC (Model-View-Controller)</strong> design pattern.
+    This project was completed as part of the <strong>INF1015</strong> course and includes complete implementation of game logic, graphical interface, and player interaction.
+  </p>
+
+
     <div class="project-images">
-      <img src="assets/echec.png" alt="Chess Game Screenshot">
+      <img src="assets/echec.png" alt="Chess Game Screenshot" (click)="openLightbox('assets/echec.png')">
+      <img src="assets/echecJeu.png" alt="Chess check" (click)="openLightbox('assets/echecJeu.png')">
     </div>
-  
-    <div class="more-content-placeholder">
-      <p>More features and technical details of the game logic will be added here...</p>
-    </div>
-  
-    <button routerLink="/projects" class="back-button">← Back to Projects</button>
-  </section>
-  
+
+
+  <div class="project-description">
+    <p>
+      This project was a fun and valuable learning experience. One of the main challenges I encountered was due to poor initial planning of class interactions. I found myself stuck between keeping all the movement logic for every piece in a single, bloated file or restructuring the design entirely since breaking the logic into individual piece classes caused circular dependencies. With the project already well underway and code quality not being graded, I chose to push forward as-is. It taught me an important lesson about the value of early architectural planning to prevent technical debt and maintain scalable, clean code.
+    </p>
+    
+  </div>
+
+  <button routerLink="/projects" class="back-button">← Back to Projects</button>
+</section>
+
+
+
+
+@if (lightboxImage) {
+  <div class="lightbox" (click)="closeLightbox()" [class.visible]="lightboxVisible">
+    <img [src]="lightboxImage" alt="Zoomed Image" (click)="$event.stopPropagation()">
+  </div>
+}
