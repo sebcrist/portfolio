@@ -9,7 +9,7 @@
 
   <p class="project-description">
     This project is a tactical RPG web platform developed using <strong>TypeScript</strong>, <strong>Angular</strong>, and <strong>NestJS</strong>, enabling players to engage in turn-based combat on customizable grid maps.
-    The platform supports multiplayer sessions, includes an <strong>algorithm-driven virtual player system</strong>, features real-time chat, and game state management for an immersive gameplay experience.
+    The platform supports multiplayer sessions (using socket.io), includes an <strong>algorithm-driven virtual player system</strong>, features real-time chat, and game state management for an immersive gameplay experience.
   </p>
 
   <div class="project-section">
@@ -51,7 +51,7 @@
     </div>
     <div class="project-description">
       <p>
-        So once you select a map (or join a game) you can create your character. You can choose a name, a character image, and some perks.
+        So once you select a map (or join a game) you can create your character. You can choose a name, a character image, and some perks. Using sockets we can also ensure that no players have the same character image and when an image is selected, it is broadcasted to all players in the character creation.
       </p>
     </div>
   </div>
@@ -62,7 +62,7 @@
     </div>
     <div class="project-description">
       <p>
-        Once you choose a map and character, you enter the waiting screen where you can see other players and chat with them. Other players can join the waiting room using the code and once the hosts decides the game starts. The host can also instead choose to play with virtual players which can either have a more defensive or aggressive play-style.
+        Once you choose a map and character, you enter the waiting screen where you can see other players and chat with them. Other players can join the waiting room using the codde and the hosts decides when the game starts. The host can also instead choose to play with virtual players which can either have a more defensive or aggressive play-style.
       </p>
     </div>
   </div>
