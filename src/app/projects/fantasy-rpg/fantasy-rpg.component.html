@@ -8,23 +8,93 @@
   <h2>Integrative Project 2 - Polytechnique Montréal (2025)</h2>
 
   <p class="project-description">
-  This project is a tactical RPG web platform developed using <strong>TypeScript</strong>, <strong>Angular</strong>, and <strong>NestJS</strong>, enabling players to engage in turn-based combat on customizable grid maps.
-  The platform supports multiplayer sessions, includes an <strong>algorithm-driven virtual player system</strong>, features real-time chat, and game state management for an immersive gameplay experience.
+    This project is a tactical RPG web platform developed using <strong>TypeScript</strong>, <strong>Angular</strong>, and <strong>NestJS</strong>, enabling players to engage in turn-based combat on customizable grid maps.
+    The platform supports multiplayer sessions, includes an <strong>algorithm-driven virtual player system</strong>, features real-time chat, and game state management for an immersive gameplay experience.
   </p>
 
-  <div class="project-images">
-    <img src="assets/combatRPG.png" alt="Gameplay Screenshot">
-    <img src="assets/gameRPG.png" alt="Edition Screenshot">
-    <img src="assets/character.png" alt="BOM Management Desktop Screenshot">
-    <img src="assets/waitingRPG.png" alt="BOM Management Desktop Screenshot">
-    <img src="assets/movementRPG.png" alt="BOM Management Desktop Screenshot">
-    <img src="assets/listRPG.png" alt="BOM Management Desktop Screenshot">
-    <img src="assets/homeFantasyRPG.png" alt="BOM Management Desktop Screenshot">
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/homeFantasyRPG.png" alt="Home page of the game" (click)="openLightbox('assets/homeFantasyRPG.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        Here is the home screen of the website.
+      </p>
+    </div>
   </div>
 
-  <div class="more-content-placeholder">
-      <p>More details coming soon...</p>
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/listRPG.png" alt="List of maps" (click)="openLightbox('assets/listRPG.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        Here is the list view of all the visible maps (some maps can be hidden). If you choose to "Administrer les jeux" from the previous screen, you can create a new map or edit an existing one, delete a map, or change its visibility.
+      </p>
+    </div>
   </div>
+
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/mapEdit.png"   alt="View of map editing" (click)="openLightbox('assets/mapEdit.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        Theres a map editor, which allows users to create and customize their own maps for gameplay. There are specific rules for the map which are enforced client and server side. Also maps can be 3 different sizes.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/character.png"   alt="View of character creation" (click)="openLightbox('assets/character.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        So once you select a map (or join a game) you can create your character. You can choose a name, a character image, and some perks.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/waitingRPG.png"   alt="View of waiting screen" (click)="openLightbox('assets/waitingRPG.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        Once you choose a map and character, you enter the waiting screen where you can see other players and chat with them. Other players can join the waiting room using the code and once the hosts decides the game starts. The host can also instead choose to play with virtual players which can either have a more defensive or aggressive play-style.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/movementRPG.png" alt="Main view of the game" (click)="openLightbox('assets/movementRPG.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        This image demonstrates movement using Dijkstra's algorithm to calculate the shortest path while avoiding obstacles. Players can't move through walls, must open doors (once per turn), and can't occupy the same tile as another player. Movement points are determined by a dice roll: ice tiles cost 0, ground tiles cost 1, while water tiles cost 2.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="project-images">
+      <img src="assets/combatRPG.png" alt="Gameplay of combat" (click)="openLightbox('assets/combatRPG.png')">
+    </div>
+    <div class="project-description">
+      <p>
+        Here you can see combat in action. The combat system is turn-based and time-limited. Players can choose between attacking, or trying to escape. The success of an attack or escape is based on dice rolls.
+      </p>
+    </div>
+  </div>
+
+
+  <p class="project-description">
+    In addition to the core gameplay, the project features detailed player statistics, a Capture the Flag mode, and a comprehensive event log that records every in-game action. Developed by a six-member team, we had to follow Agile practices (including sprint planning, weekly meetings, and sprint retrospectives) which fostered effective collaboration, continuous feedback, and incremental improvements throughout the development cycle. The main challenge was correctly planning how much time we needed to implement each feature as well as ensuring the code was well structured and modular to allow for easy integration of new features. The project was a great learning experience in both technical and team collaboration skills.
+  </p>
+
+
 
   <button routerLink="/projects" class="back-button">← Back to Projects</button>
 </section>

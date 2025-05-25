@@ -8,19 +8,35 @@
     <h2>Bom Management Project - Société Technique Formule SAE (2023-2024)</h2>
     
     <p class="project-description">
-      Project for the <strong>Formule SAE</strong> team at <strong>Polytechnique Montréal</strong>. The goal of this project is to create a <strong>BOM (Bill of Materials) management system</strong> for the team.
+      Project developed in python for the <strong>Formule SAE</strong> team at <strong>Polytechnique Montréal</strong>. The goal of this project is to create a <strong>BOM (Bill of Materials) management system</strong> for the team.
       It includes both a desktop and mobile application to streamline parts tracking and inventory management.
     </p>
   
     <div class="project-images">
-      <img src="assets/mainDesktop.png" alt="BOM Management Desktop Screenshot">
-      <img src="assets/editMobile.jpg" alt="BOM Management Desktop Screenshot">
-      <img src="assets/qrCode.png" alt="BOM Management Desktop Screenshot">
-      <img src="assets/scanMobile.jpg" alt="BOM Management Desktop Screenshot">
+      <img src="assets/mainDesktop.png" alt="Desktop Screenshot" (click)="openLightbox('assets/mainDesktop.png')">
+      <img src="assets/qrCode.png" alt="QrPrinting" (click)="openLightbox('assets/qrCode.png')">
+    </div>
+
+    <div class="project-description">
+      <p>
+        Above are screenshots of the desktop application. This version focuses on features such as searching for parts, viewing and managing part details, and generating QR code labels for each part using just the part ID (also had a feature where it would automatically send labels to print to a connected printer).
+      </p>
+      <p>
+        Below are screenshots of the mobile application. This version is designed for on-the-go use, allowing users to quickly access part information and manage inventory by scanning QR code labels with the device’s camera.
+      </p>
+    </div>
+
+    <div class="project-images">
+      <img src="assets/scanMobile.jpg" alt="Qr scanning" (click)="openLightbox('assets/scanMobile.jpg')">
+      <img src="assets/editMobile.jpg" alt="Mobile editing" (click)="openLightbox('assets/editMobile.jpg')">  
     </div>
   
-    <div class="more-content-placeholder">
-      <p>More technical details and features will be added here...</p>
+    <div class="project-description">
+      <p>
+        The main challenge I faced was not clearly discussing the requirements with the <i>client</i> (a student responsible for part production in the SAE team) which led to misunderstandings about the project's goals. Through reflecting on this experience, and thanks to insights gained in my course <em>LOG2400 - Analyse et conception de logiciels</em>, I realized how valuable rigorous requirements gathering techniques are for aligning expectations and saving time throughout
+        the development process.
+      </p>
+
     </div>
   
     <button routerLink="/projects" class="back-button">← Back to Projects</button>
