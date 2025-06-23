@@ -1,2 +1,2 @@
 # portfolio
-A small website to display my different projects over the years
+A small website using angular to display my different projects over the years

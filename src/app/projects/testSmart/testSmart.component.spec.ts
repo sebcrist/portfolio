@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DbWebappComponent } from './db-webapp.component';
+import { TestSmartComponent } from './testSmart.component';
 
-describe('DbWebappComponent', () => {
-  let component: DbWebappComponent;
-  let fixture: ComponentFixture<DbWebappComponent>;
+describe('TestSmartComponent', () => {
+  let component: TestSmartComponent;
+  let fixture: ComponentFixture<TestSmartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DbWebappComponent]
+      imports: [TestSmartComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DbWebappComponent);
+    fixture = TestBed.createComponent(TestSmartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

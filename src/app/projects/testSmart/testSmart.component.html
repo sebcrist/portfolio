@@ -1,0 +1,46 @@
+<section class="project-detail-container">
+  <div class="github-link">
+    <a href="https://github.com/sebcrist/WireApp" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Checkout the Code (Private)
+    </a>
+  </div>
+
+  <h2>TestSmart - Wirewerks (2025)</h2>
+
+  <p class="project-description">
+   This project was commissioned by Wirewerks during my internship. Over the course of approximately three months, I was tasked with developing a web application using ASP.NET Core to streamline the retrieval of test results from various testing setups. Each setup stored its results locally inside a SQL database. The application consolidates (syncs) this data into a central database, enabling efficient access and management. One of the key features includes generating printable PDF reports using pre-defined templates. 
+    </p>
+   <p class="project-description">
+   I exceeded the functionality requirements of the mandate in half the allotted time, significantly exceeding expectations and demonstrating strong initiative and efficiency. As a result, my supervisor assigned me to additional responsibilities, including enhancing an internal client portal used for transmitting and tracking product shipments.
+  </p>
+
+
+    <div class="project-images">
+      <img src="assets/comingSoon.jpeg" alt="Work Order Search" (click)="openLightbox('assets/comingSoon.jpeg')">
+      <img src="assets/comingSoon.jpeg" alt="Serial Number Search" (click)="openLightbox('assets/comingSoon.jpeg')">
+    </div>
+
+
+  <div class="project-description">
+    <p>
+    I chose Razor Pages for this project as it was my first experience with ASP.NET, and Razor Pages offered a beginner-friendly approach well-suited for CRUD-based applications like this one.
+    </p>
+
+
+    <p>
+    Setting up the databases on the test setup machines to accept network queries involved significant work. In some cases, the company had lost credentials for certain computers, requiring me to reset database passwords and create new users. Throughout this process, I became familiar with Microsoft SQL Server 2000 and 2012, as well as tools like ODBC Data Source Administrator (odbcad32), osql, and SQL Server Management Studio (SSMS).
+    </p>
+    
+  </div>
+
+  <button routerLink="/projects" class="back-button">← Back to Projects</button>
+</section>
+
+
+
+
+@if (lightboxImage) {
+  <div class="lightbox" (click)="closeLightbox()" [class.visible]="lightboxVisible">
+    <img [src]="lightboxImage" alt="Zoomed Image" (click)="$event.stopPropagation()">
+  </div>
+}

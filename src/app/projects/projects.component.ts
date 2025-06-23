@@ -10,16 +10,16 @@ import { RouterLink } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
-      title: 'ASP.Net app - Wirewerks (2025)',
-      description: 'This project is a web application developed using ASP.Net Core, and Entity Framework. More details will be available when the project is done ;)',
-      image: 'assets/webAppBase.png',
-      // route: '/projects/DB-WebApp',
-      // link: 'https://github.com/sebcrist/Coming Soon :)'
+      title: 'TestSmart - Wirewerks (2025)',
+      description: 'This project is a web application built with ASP.NET Core and Razor Pages. It interfaces with multiple SQL databases to manage and display test results efficiently. I built this app during my internship at Wirewerks to help streamline internal processes.',
+      image: 'assets/testSmartLogo.png',
+      route: '/projects/testSmart',
+      link: 'https://github.com/sebcrist/ComingSoon:)'
     },
     {
       title: 'PDF Splitter - Independent Project (2025)',
-      description: 'This project is still in developpement, front end with angular and backend using asp.Net.',
-      image: 'assets/loading.png',
+      description: 'This project is still in developpement, front end with angular and backend using Asp.Net.',
+      image: 'assets/comingSoon.jpeg',
       route: '/projects/pdfSplitter',
       link: 'https://github.com/sebcrist/PDFSplitter'
     },

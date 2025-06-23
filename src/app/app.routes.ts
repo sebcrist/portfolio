@@ -6,7 +6,7 @@ import { RobotsComponent } from './projects/robots/robots.component';
 import { EchecComponent } from './projects/echec/echec.component';
 import { GestionBOMComponent } from './projects/gestion-bom/gestion-bom.component';
 import { FantasyRPGComponent } from './projects/fantasy-rpg/fantasy-rpg.component';
-import { DbWebappComponent } from './projects/db-webapp/db-webapp.component';
+import { TestSmartComponent } from './projects/testSmart/testSmart.component';
 import { PdfSplitterComponent } from './projects/pdf-splitter/pdf-splitter.component';
 
 export const routes: Routes = [
@@ -18,6 +18,6 @@ export const routes: Routes = [
     { path: 'projects/gestionBOM', component: GestionBOMComponent},
     { path: 'projects/fantasyRPG', component: FantasyRPGComponent},
     { path: 'projects/pdfSplitter', component: PdfSplitterComponent},
-    { path: 'projects/DB-WebApp', component: DbWebappComponent},
+    { path: 'projects/testSmart', component: TestSmartComponent},
     { path: '**', redirectTo: '' },
 ];
