@@ -1,0 +1,43 @@
+<section class="project-detail-container">
+  <div class="github-link">
+    <a href="https://github.com/sebcrist/PDFSplitter" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Checkout the Code
+    </a>
+  </div>
+
+  <h2>Pdf Splitter - Independent Project (2025)</h2>
+
+  <p class="project-description">
+    This project was inspired by a real need in the accounting department of a construction company. My goal was to create a tool that could automatically split large PDFs—such as batches of invoices—into individual, organized documents based on user-defined criteria.
+    I began with a Python prototype, then developed a full-featured web application using Angular for the frontend and ASP.NET for the backend. The app allows users to upload a PDF, define how it should be split (e.g., by invoice number, logo, or other markers), and download the resulting files in a ZIP archive.
+    This solution addresses a common challenge faced by accounting teams, law firms, and other professionals who frequently work with large, multi-document PDFs. By automating the process, it can save hours of manual work and reduce errors. Unlike existing tools—which are limited and expensive—this app is free and easy to use.
+  </p>
+
+
+    <div class="project-images">
+      <img src="assets/loading.png" alt="Python script running" (click)="openLightbox('assets/loading.png')">
+      <img src="assets/loading.png" alt="End results" (click)="openLightbox('assets/loading.png')">
+    </div>
+
+
+  <div class="project-description">
+    <p>
+    I initially used Python and compiled it to an exe (PyInstaller) to quickly build a proof of concept, but distributing a desktop script across multiple machines proved inefficient and hard to maintain. To make the solution more scalable and user-friendly, I decided to rebuild it as a web application.
+    This approach allows companies to host the tool on their own internal server, enabling secure, local access for employees without relying on third-party services. It also ensures that sensitive documents remain within the organization's infrastructure, maintaining privacy and compliance.
+
+
+    </p>
+    
+  </div>
+
+  <button routerLink="/projects" class="back-button">← Back to Projects</button>
+</section>
+
+
+
+
+@if (lightboxImage) {
+  <div class="lightbox" (click)="closeLightbox()" [class.visible]="lightboxVisible">
+    <img [src]="lightboxImage" alt="Zoomed Image" (click)="$event.stopPropagation()">
+  </div>
+}

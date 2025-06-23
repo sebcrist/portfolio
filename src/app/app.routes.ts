@@ -7,6 +7,7 @@ import { EchecComponent } from './projects/echec/echec.component';
 import { GestionBOMComponent } from './projects/gestion-bom/gestion-bom.component';
 import { FantasyRPGComponent } from './projects/fantasy-rpg/fantasy-rpg.component';
 import { DbWebappComponent } from './projects/db-webapp/db-webapp.component';
+import { PdfSplitterComponent } from './projects/pdf-splitter/pdf-splitter.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'projects/echec', component: EchecComponent},
     { path: 'projects/gestionBOM', component: GestionBOMComponent},
     { path: 'projects/fantasyRPG', component: FantasyRPGComponent},
+    { path: 'projects/pdfSplitter', component: PdfSplitterComponent},
     { path: 'projects/DB-WebApp', component: DbWebappComponent},
     { path: '**', redirectTo: '' },
 ];
